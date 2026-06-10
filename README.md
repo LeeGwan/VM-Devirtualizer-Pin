@@ -83,6 +83,7 @@ for recovering the meaning of each handler one at a time.
 > they can be larger than the number of lines actually printed in the trace above.
 
 ---
-
+Download: https://www.intel.com/content/www/us/en/developer/articles/tool/pin-a-binary-instrumentation-tool-downloads.html
+Version: Pin 3.31 (EOL)
 *Runs on a 32-bit x86 target with Intel Pin (JIT mode). Use it only on targets you're
 authorized to analyze, and for learning/research purposes only.*
