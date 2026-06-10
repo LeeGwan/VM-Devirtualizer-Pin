@@ -1,6 +1,6 @@
 # VMAnalyzer — a VM-obfuscation analysis tool built with Pin
 
-> English | [한국어](./vmanalyzer-post.ko.md)
+> English | [한국어](./README.ko.md)
 
 A dynamic analysis tool I built with Intel Pin to help analyze VM-based obfuscation
 (code virtualization). It hooks the VM dispatcher at runtime and produces a
