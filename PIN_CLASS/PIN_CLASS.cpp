@@ -140,9 +140,9 @@ bool PIN_CLASS::pinClassInit(int argc, char* argv[])
 
 void PIN_CLASS::pinClassStart()
 {
-    IMG_AddInstrumentFunction(IMG_Callbackfunc, this);
-    INS_AddInstrumentFunction(INS_Callbackfunc, this);
-    PIN_AddFiniFunction(Fini_Callbackfunc, this);
+    IMG_AddInstrumentFunction(IMG_Callbackfunc, this); ///< Register image instrumentation callback
+    INS_AddInstrumentFunction(INS_Callbackfunc, this); ///< Register instruction instrumentation callback
+    PIN_AddFiniFunction(Fini_Callbackfunc, this); ///< Register finalization callback
     PIN_StartProgram();
 }
 
@@ -152,7 +152,7 @@ void PIN_CLASS::pinClassStart()
 
 VOID PIN_CLASS::IMG_Callbackfunc(IMG img, VOID* v)
 {
-    if (!IMG_IsMainExecutable(img)) return;
+    if (!IMG_IsMainExecutable(img)) return; 
     static_cast<PIN_CLASS*>(v)->ProcessImage(img);
 }
 
